@@ -1,0 +1,17 @@
+led / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# SQLite3 database files:
+*.db
+*.sqlite3
+*.sqlite
+
+# PyCharm
+*.iml
+.idea/
+*.ipr
+*.iws
+
