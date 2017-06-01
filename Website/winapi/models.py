@@ -11,7 +11,7 @@ class Category(models.Model):
 
 
 class Dll(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     remark = models.TextField(blank=True, null=True)
 
     def __str__(self):
@@ -19,10 +19,10 @@ class Dll(models.Model):
 
 
 class API(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     hash_value = models.CharField(max_length=64, blank=True, null=True)
     category = models.ForeignKey(Category, blank=True, null=True)
-    dll = models.ForeignKey(Dll, blank=True, null=True)
+    dll = models.ManyToManyField(Dll, blank=True)
     remark = models.TextField(blank=True, null=True)
 
     def __str__(self):

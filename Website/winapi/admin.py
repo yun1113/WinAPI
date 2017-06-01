@@ -3,8 +3,8 @@ from .models import Category, Dll, API
 
 
 class APIAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category', 'dll', 'hash_value')
-    search_fields = ('hash', 'name')
+    list_display = ('name', 'category', 'hash_value')
+    search_fields = ('name',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
