@@ -2,14 +2,6 @@ from __future__ import unicode_literals
 from django.db import models
 
 
-class Category(models.Model):
-    name = models.CharField(max_length=100)
-    remark = models.TextField(blank=True, null=True)
-
-    def __str__(self):
-        return self.name
-
-
 class Dll(models.Model):
     name = models.CharField(max_length=100, unique=True)
     remark = models.TextField(blank=True, null=True)
@@ -21,7 +13,6 @@ class Dll(models.Model):
 class API(models.Model):
     name = models.CharField(max_length=100, unique=True)
     hash_value = models.CharField(max_length=64, blank=True, null=True)
-    category = models.ForeignKey(Category, blank=True, null=True)
     dll = models.ManyToManyField(Dll, blank=True)
     remark = models.TextField(blank=True, null=True)
 
