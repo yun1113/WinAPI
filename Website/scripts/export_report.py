@@ -23,10 +23,22 @@ def export_report(data, filename='report'):
 def write_to_file(filename, data):
     wb = Workbook()
     ws = wb.active
+
+    ws.title = 'API count'
     ws.append(['Api', 'Dll', 'Count'])
+
+    ws2 = wb.create_sheet('Statistic')
+    ws2.append(['Total Dll Number', len(data.keys())])
+
+    unsort_list = []
     for k, v in data.items():
+        ws2.append(['', k])
         for api, count in v.items():
-            ws.append([api, k, count])
+            unsort_list.append([api, k, count])
+    ws2['A2'] = 'Dll List'
+    for item in sorted(unsort_list, key=lambda x: x[2], reverse=True):
+        ws.append(item)
+
     wb.save(os.path.basename(filename)+'.xlsx')
 
 
