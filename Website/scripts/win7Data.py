@@ -21,7 +21,8 @@ for dll_name, api_info in win7API.items():
         api.save()
 
 
-count = 0
-for k, v in win8API.items():
-    count += len(v['ExportedFunctions'])
-print(count)
+count = []
+for k, v in win7API.items():
+    count.extend(v['ExportedFunctions'])
+print(len(set(count)))
+
