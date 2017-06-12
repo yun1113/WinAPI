@@ -11,5 +11,5 @@ class DllAdmin(admin.ModelAdmin):
     list_display = ('name', )
     search_fields = ('name', )
 
-admin.site.register(API, APIAdmin)git
+admin.site.register(API, APIAdmin)
 admin.site.register(Dll, DllAdmin)

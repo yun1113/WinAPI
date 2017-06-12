@@ -4,6 +4,10 @@ from django.db import models
 
 class Dll(models.Model):
     name = models.CharField(max_length=100, unique=True)
+    winxp = models.BooleanField(default=False)
+    win7 = models.BooleanField(default=False)
+    win8 = models.BooleanField(default=False)
+    win10 = models.BooleanField(default=False)
     remark = models.TextField(blank=True, null=True)
 
     def __str__(self):
