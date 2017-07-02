@@ -24,12 +24,21 @@ class API(models.Model):
         return self.name
 
 
-class MalwareAPICall(models.Model):
+class MalwareAPICallExcutionTrace(models.Model):
     malware_name = models.CharField(max_length=100, blank=True, null=True)
     sha256 = models.CharField(max_length=100, blank=True, null=True)
+    api = models.ManyToManyField(API)
+    dll = models.ManyToManyField(Dll, blank=True)
+
+    def __str__(self):
+        return self.sha256
+
+
+class MalwareAPICall(models.Model):
+    malware_excution_trace = models.ForeignKey(MalwareAPICallExcutionTrace, blank=True, null=True)
     api = models.ForeignKey(API)
     dll = models.ForeignKey(Dll, blank=True)
     count = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
-        return self.sha256
+        return self.malware_excution_trace
