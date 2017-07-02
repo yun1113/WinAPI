@@ -22,3 +22,14 @@ class API(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class MalwareAPICall(models.Model):
+    malware_name = models.CharField(max_length=100, blank=True, null=True)
+    sha256 = models.CharField(max_length=100, blank=True, null=True)
+    api = models.ForeignKey(API)
+    dll = models.ForeignKey(Dll, blank=True)
+    count = models.IntegerField(blank=True, null=True)
+
+    def __str__(self):
+        return self.sha256
