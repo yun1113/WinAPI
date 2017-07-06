@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="padding-left: 20px;">
+        <form action="." method="post">
+            {% csrf_token %}
+            <p style="padding-bottom: 10px;">
+                功能：<br>
+                (1) 給定一 Dll，能夠列出哪些 sample load 過該 Dll<br>
+                (2) 給定一 API，能夠列出哪些 sample invoke 過該 API<br>
+            </p>
+            <select name="type">
+                <option value="Dll">DLL</option>
+                <option value="API">API</option>
+            </select>
+            <input type="text" name="name">
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>
+            {% if samples %}
+                {% if model_name == 'Dll' %}
+                    Samples who used to load {{ data.name }} are:<br>
+                {% else%}
+                    Samples who used to invoke {{ data.name }} are:<br>
+                {% endif %}
+
+                {% for sample in samples %}
+                    {{ sample.sha256 }} <br>
+                {% endfor %}
+            {% endif%}
+        </p>
+
+    </div>
+</body>
+</html>
