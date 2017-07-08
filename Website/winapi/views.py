@@ -1,4 +1,5 @@
 from django.shortcuts import render_to_response, render
+from django.db.models import Count
 from models import API, Dll
 
 
@@ -19,3 +20,13 @@ def temp_view(request):
                                                   'samples': samples, 'data': data[0]})
 
     return render(request, 'index.html', locals())
+
+
+def temp_view2(request):
+
+    frquency_list = [(dll.name, len(dll.malwareapicallexcutiontrace_set.all()))
+                     for dll in Dll.objects.annotate(num_malware=Count('malwareapicallexcutiontrace')).filter(
+                     num_malware__gt=0)]
+    sorted(frquency_list, key=lambda x: x[1])
+
+    return render(request, 'frequency.html', locals())

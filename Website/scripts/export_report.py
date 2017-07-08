@@ -76,4 +76,4 @@ def run(*args):
     data = json.load(open(filename, 'r'))
     export_report(data, filename)
 
-# python manage.py runscript export_report --script-args /home/hcy/WinAPI/Website/mimikatz.exe_3584.trace.calls.json
+# python manage.py runscript export_report --script-args /home/hcy/WinAPI/Website/224e85be3d06e580a7fc48294ad6b7f9e9ee2ede8bfe1b0cb88ac3b0fc1bf840_3584.trace.calls.json
