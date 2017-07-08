@@ -3,6 +3,28 @@ from django.db.models import Count
 from models import API, Dll
 
 
+def api_info(request):
+    if request.method == 'POST':
+        api_name = request.POST.get('name', '')
+        api = API.objects.filter(name=api_name)
+
+        if api:
+            return render(request, 'api_info.html', {'api': api[0]})
+
+    return render(request, 'api_info.html', locals())
+
+
+def dll_info(request):
+    if request.method == 'POST':
+        dll_name = request.POST.get('name', '')
+        dll = Dll.objects.filter(name=dll_name)
+
+        if dll:
+            return render(request, 'dll_info.html', {'dll': dll[0]})
+
+    return render(request, 'dll_info.html', locals())
+
+
 def temp_view(request):
     if request.method == 'POST':
 

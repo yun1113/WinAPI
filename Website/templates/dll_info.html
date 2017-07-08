@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <form action="/winapi/dll-info/" method="post">
+            {% csrf_token %}
+            <p style="padding-bottom: 5px;">
+                輸入 Dll name 以列出 Dll information
+            </p>
+            <input type="text" name="name">
+            <input type="submit" value="Submit">
+        </form>
+
+        {% if dll %}
+            <table style="padding-top: 10px;">
+                <tr>
+                    <th>Dll Name:</th>
+                    <td>{{ dll.name }}</td>
+                </tr>
+                <tr>
+                    <th>說明:</th>
+                    <td>
+                        {% if dll.remark %}
+                            {{ dll.remark }}
+                        {% else%}
+                            No information about this dll.
+                        {% endif%}
+                    </td>
+                </tr>
+            </table>
+        {% endif %}
+    </div>
+</body>
+</html>

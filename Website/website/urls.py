@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from winapi.views import temp_view, temp_view2
+from winapi.views import api_info, dll_info, temp_view, temp_view2
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^winapi/$', temp_view),  # search
-    url(r'^winapi/frequent_dll$', temp_view2),  # count frequency
+    url(r'^winapi/api-info', api_info),  # api info
+    url(r'^winapi/dll-info', dll_info),  # dll info
+    url(r'^winapi/search$', temp_view),  # search
+    url(r'^winapi/frequent-dll$', temp_view2),  # count frequency
 ]

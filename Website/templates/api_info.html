@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <form action="/winapi/api-info/" method="post">
+            {% csrf_token %}
+            <p style="padding-bottom: 5px;">
+                輸入 API name 以列出 API information
+            </p>
+            <input type="text" name="name">
+            <input type="submit" value="Submit">
+        </form>
+
+        {% if api %}
+            <table style="padding-top: 10px;">
+                <tr>
+                    <th>API Name:</th>
+                    <td>{{ api.name }}</td>
+                </tr>
+                <tr>
+                    <th>包含於 Dll:</th>
+                    <td>
+                        {% for dll in api.dll.all %}
+                            {{ dll.name }},
+                        {% endfor %}
+                    </td>
+                </tr>
+            </table>
+        {% endif %}
+    </div>
+
+</body>
+</html>
