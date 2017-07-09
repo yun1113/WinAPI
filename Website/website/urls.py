@@ -14,14 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
+from django.views.generic import TemplateView
 from django.contrib import admin
 from winapi.views import api_info, dll_info, temp_view, temp_view2
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^winapi/api-info', api_info),  # api info
-    url(r'^winapi/dll-info', dll_info),  # dll info
+    url(r'^winapi$', TemplateView.as_view(template_name="index.html")),
+    url(r'^winapi/api-info$', api_info),  # api info
+    url(r'^winapi/dll-info$', dll_info),  # dll info
     url(r'^winapi/search$', temp_view),  # search
     url(r'^winapi/frequent-dll$', temp_view2),  # count frequency
 ]
