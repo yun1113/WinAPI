@@ -38,10 +38,10 @@ def temp_view(request):
 
         if data:
             samples = data[0].malwareapicallexcutiontrace_set.all()
-            return render(request, 'index.html', {'request': request, 'model_name': model_name,
+            return render(request, 'search.html', {'request': request, 'model_name': model_name,
                                                   'samples': samples, 'data': data[0]})
 
-    return render(request, 'index.html', locals())
+    return render(request, 'search.html', locals())
 
 
 def temp_view2(request):
