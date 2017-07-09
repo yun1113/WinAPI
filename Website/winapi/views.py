@@ -10,6 +10,8 @@ def api_info(request):
 
         if api:
             return render(request, 'api_info.html', {'api': api[0]})
+        else:
+            return render(request, 'api_info.html', {'no_result': True})
 
     return render(request, 'api_info.html', locals())
 
@@ -21,6 +23,8 @@ def dll_info(request):
 
         if dll:
             return render(request, 'dll_info.html', {'dll': dll[0]})
+        else:
+            return render(request, 'dll_info.html', {'no_result': True})
 
     return render(request, 'dll_info.html', locals())
 
@@ -41,6 +45,8 @@ def temp_view(request):
             return render(request, 'search.html', {'request': request, 'model_name': model_name,
                                                   'samples': samples, 'data': data[0]})
 
+        else:
+            return render(request, 'search.html', {'no_result': True})
     return render(request, 'search.html', locals())
 
 

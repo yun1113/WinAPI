@@ -33,6 +33,9 @@
                     {{ sample.sha256 }} <br>
                 {% endfor %}
             {% endif%}
+            {% if no_result%}
+                <p>No results.</p>
+            {% endif%}
         </p>
 
     </div>

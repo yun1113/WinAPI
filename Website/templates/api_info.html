@@ -6,12 +6,12 @@
 </head>
 <body>
     <div>
-        <form action="/winapi/api-info/" method="post">
+        <form action="/winapi/api-info" method="post">
             {% csrf_token %}
             <p style="padding-bottom: 5px;">
                 輸入 API name 以列出 API information
             </p>
-            <input type="text" name="name">
+            <input type="text" name="name" value="LoadLibraryW">
             <input type="submit" value="Submit">
         </form>
 
@@ -31,6 +31,9 @@
                 </tr>
             </table>
         {% endif %}
+        {% if no_result%}
+            <p>No results.</p>
+        {% endif%}
     </div>
 
 </body>
