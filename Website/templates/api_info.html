@@ -6,10 +6,12 @@
 </head>
 <body>
     <div>
-        <form action="/winapi/api-info" method="post">
+        <form action="{% url 'api-info' %}" method="post">
             {% csrf_token %}
             <p style="padding-bottom: 5px;">
-                輸入 API name 以列出 API information
+                在 API call invocation reporting system 資料庫中，擁有蒐集自 MSDN 以及<br>
+                各網站的 Windows API 資訊，在此頁面可透過輸入 API name 來列出資料<br>
+                庫內的 API information，例如：該 API 存在於哪些 Dll 中
             </p>
             <input type="text" name="name" value="LoadLibraryW">
             <input type="submit" value="Submit">
