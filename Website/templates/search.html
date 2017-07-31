@@ -6,10 +6,13 @@
 </head>
 <body>
     <div style="padding-left: 20px;">
-        <form action="/winapi/search" method="post">
+        <form action="{% url 'search-info' %}" method="post">
             {% csrf_token %}
             <p style="padding-bottom: 10px;">
-                功能：<br>
+                此頁面將根據所有 sample 的 all_API call execution traces 進行統計，<br>
+                能夠列出所有用到特定 DLL/API 的 samples（以其 SHA256 表示），<br>
+                目的是幫助了解 API/DLL 被 sample 所使用的情形<br>
+                功能說明：<br>
                 (1) 給定一 Dll，能夠列出哪些 sample load 過該 Dll<br>
                 (2) 給定一 API，能夠列出哪些 sample invoke 過該 API<br>
             </p>
