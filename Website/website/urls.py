@@ -21,9 +21,9 @@ from winapi.views import api_info, dll_info, temp_view, temp_view2
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^winapi$', TemplateView.as_view(template_name="index.html")),
-    url(r'^winapi/api-info$', api_info),  # api info
-    url(r'^winapi/dll-info$', dll_info),  # dll info
-    url(r'^winapi/search$', temp_view),  # search
-    url(r'^winapi/frequent-dll$', temp_view2),  # count frequency
+    url(r'^winapi/$', TemplateView.as_view(template_name="index.html")),
+    url(r'^winapi/api-info/$', api_info, name='api-info'),  # api info
+    url(r'^winapi/dll-info/$', dll_info, name='dll-info'),  # dll info
+    url(r'^winapi/search/$', temp_view, name='search-info'),  # search
+    url(r'^winapi/frequent-dll/$', temp_view2, name='frequent-dll'),  # count frequency
 ]
