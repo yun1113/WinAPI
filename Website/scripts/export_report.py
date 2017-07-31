@@ -48,7 +48,7 @@ def write_to_file(filename, data):
             unsort_list.append([api, k, count])
 
     # write to page2
-    for dll_stat in sorted(dll_list, key=lambda x: x[2], reverse=True):
+    for dll_stat in sorted(dll_list, key=lambda x: x[1], reverse=True):
         ws2.append(dll_stat)
     ws2.append([])
     ws2.append(['Total Dll Number', len(data.keys())])
