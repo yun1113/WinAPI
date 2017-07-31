@@ -6,10 +6,12 @@
 </head>
 <body>
     <div>
-        <form action="/winapi/dll-info" method="post">
+        <form action="{% url 'dll-info' %}" method="post">
             {% csrf_token %}
             <p style="padding-bottom: 5px;">
-                輸入 Dll name 以列出 Dll information
+                在 API call invocation reporting system 資料庫中，擁有蒐集自 MSDN 以及<br>
+                各網站的 Windows Dll 資訊，在此頁面可透過輸入 Dll name 來列出資料<br>
+                庫內的 Dll information，例如：該 Dll 用途的簡要說明
             </p>
             <input type="text" name="name" value="advapi32.dll">
             <input type="submit" value="Submit">
