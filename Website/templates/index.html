@@ -6,22 +6,33 @@
 </head>
 <body>
     <div>
+        此網站作為 API call invocation reporting system 的互動界面，提供<br>
+        使用者查看資料庫內容的互動界面，以及根據基於 Temu 產生的<br>
+        all_API call execution traces 來讓使用者搜尋用到特定 DLL/API 的<br>
+        samples，並針對 traces 統計後列出最常被 load 的 dll ranking<br>
+    </div>
+    <div>
         <ul>
             <li>
-                <a href="/winapi/api-info">API info page</a>
-                <p style="margin:0px;">顯示 API 資訊</p>
+                <a href="{% url 'api-info' %}">API info page</a>
+                <p style="margin:0px;">搜索資料庫中 API 的資訊</p>
             </li>
             <li>
-                <a href="/winapi/dll-info">Dll info page</a>
-                <p style="margin:0px;">顯示 Dll 資訊</p>
+                <a href="{% url 'dll-info' %}">Dll info page</a>
+                <p style="margin:0px;">搜索資料庫中 DLL 的資訊</p>
             </li>
             <li>
-                <a href="/winapi/search">Search page</a>
-                <p style="margin:0px;">搜尋用到特定 DLL/API 的 samples</p>
+                <a href="{% url 'search-info' %}">Search page</a>
+                <p style="margin:0px;">
+                    根據所指定的 DLL/API 列出有使用到該 DLL/API 的 samples
+                </p>
             </li>
             <li>
-                <a href="/winapi/frequent-dll">Frequency page</a>
-                <p style="margin:0px;">列出最常被 load 的 dll ranking </p>
+                <a href="{% url 'frequent-dll' %}">Frequency page</a>
+                <p style="margin:0px;">
+                    根據資料庫中所蒐集的 sample 的 all_API call execution traces<br>
+                    進行統計，依照被 load 的 dll 的頻率進行 ranking
+                </p>
             </li>
         </ul>
     </div>
