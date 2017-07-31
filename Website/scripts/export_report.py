@@ -7,10 +7,7 @@ import os
 def export_report(data, filename='report'):
     report_dict = generte_api_count(data)
     write_to_file(filename, report_dict)
-    import pdb;pdb.set_trace()
     update_to_db(filename, report_dict)
-    import pdb;
-    pdb.set_trace()
 
 
 def generte_api_count(data):
@@ -35,18 +32,28 @@ def write_to_file(filename, data):
     wb = Workbook()
     ws = wb.active
 
+    # write header
     ws.title = 'API count'
     ws.append(['Api', 'Dll', 'Count'])
 
     ws2 = wb.create_sheet('Statistic')
-    ws2.append(['Total Dll Number', len(data.keys())])
+    ws2.append(['Dll name', 'called API number'])
 
+    # data handling
     unsort_list = []
+    dll_list = []
     for k, v in data.items():
-        ws2.append(['', k])
+        dll_list.append([k, len(v)])
         for api, count in v.items():
             unsort_list.append([api, k, count])
-    ws2['A2'] = 'Dll List'
+
+    # write to page2
+    for dll_stat in sorted(dll_list, key=lambda x: x[2], reverse=True):
+        ws2.append(dll_stat)
+    ws2.append([])
+    ws2.append(['Total Dll Number', len(data.keys())])
+
+    # write to page1
     for item in sorted(unsort_list, key=lambda x: x[2], reverse=True):
         ws.append(item)
 
