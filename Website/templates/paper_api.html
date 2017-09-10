@@ -1,0 +1,2008 @@
+<style>
+table, th, td {
+	 border: 1px solid black;
+}
+</style>
+<h2>頁面說明</h2>
+<p>
+此頁面為根據 Paper (Novel Feature Extraction, Selection and Fusion for Effective Malware Family Classification) 中所提出的 API feature 進行整理產生的，將該 API feature 的 API 列表中的一個個 API，根據 Reporting System 中 API 所屬的 Dll 進行 API 分類（API 可能重複存在在不同的 Dll 中），最後以 Dll 所含 API 個數進行排序產生如下表格。<br>
+根據該 API feature 的 API 列表可發現有 247 個 API 存在在 kernel32.dll 中， 234 個 API 存在在 KernelBase.dll 以及 214 個 API 存在在 user32.dll 中。
+</p>
+<table>
+	<tbody>
+		<tr>
+			<th>
+				Rank
+			</th>
+			<th>
+				API Number
+			</th>
+			<th>
+				Dll Name
+			</th>
+			<th>
+				Content
+			</th>
+		</tr>
+		<tr>
+			<td>
+				1
+			</td>
+			<td>
+				247
+			</td>
+			<td>
+				kernel32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 kernel32.dll is the most important Microsoft Windows Kernel. Functionality addressing most of windows functions are linked to this kernel DLL in some way.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CloseHandle, CompareFileTime, CompareStringA, CompareStringW, CopyFileA, CreateDirectoryA, CreateDirectoryW, CreateEventA, CreateEventW, CreateFileA, CreateFileMappingA, CreateFileW, CreateMutexA, CreatePipe, CreateProcessA, CreateProcessW, CreateRemoteThread, CreateThread, CreateToolhelp32Snapshot, DeleteCriticalSection, DeleteFileA, DeleteFileW, DeviceIoControl, DisableThreadLibraryCalls, DuplicateHandle, EnterCriticalSection, EnumCalendarInfoA, EnumSystemLocalesA, ExitProcess, ExitThread, ExpandEnvironmentStringsA, FileTimeToDosDateTime, FileTimeToLocalFileTime, FileTimeToSystemTime, FindClose, FindFirstFileA, FindFirstFileW, FindNextFileA, FindNextFileW, FindResourceA, FindResourceW, FlushFileBuffers, FormatMessageA, FormatMessageW, FreeEnvironmentStringsA, FreeEnvironmentStringsW, FreeLibrary, FreeResource, GetACP, GetCPInfo, GetCommandLineA, GetCommandLineW, GetComputerNameA, GetConsoleCP, GetConsoleMode, GetConsoleOutputCP, GetCurrentDirectoryA, GetCurrentProcess, GetCurrentProcessId, GetCurrentThread, GetCurrentThreadId, GetDateFormatA, GetDiskFreeSpaceA, GetDriveTypeA, GetEnvironmentStrings, GetEnvironmentStringsW, GetEnvironmentVariableA, GetExitCodeProcess, GetExitCodeThread, GetFileAttributesA, GetFileAttributesW, GetFileSize, GetFileTime, GetFileType, GetFullPathNameA, GetLastError, GetLocalTime, GetLocaleInfoA, GetLocaleInfoW, GetModuleFileNameA, GetModuleFileNameW, GetModuleHandleA, GetModuleHandleW, GetOEMCP, GetPrivateProfileStringA, GetProcAddress, GetProcessHeap, GetShortPathNameA, GetStartupInfoA, GetStartupInfoW, GetStdHandle, GetStringTypeA, GetStringTypeExA, GetStringTypeW, GetSystemDirectoryA, GetSystemInfo, GetSystemTime, GetSystemTimeAsFileTime, GetTempFileNameA, GetTempPathA, GetTempPathW, GetThreadContext, GetThreadLocale, GetTickCount, GetTimeFormatA, GetTimeZoneInformation, GetUserDefaultLCID, GetUserDefaultLangID, GetVersion, GetVersionExA, GetVersionExW, GetVolumeInformationA, GetWindowsDirectoryA, GlobalAddAtomA, GlobalAlloc, GlobalDeleteAtom, GlobalFindAtomA, GlobalFree, GlobalGetAtomNameA, GlobalHandle, GlobalLock, GlobalMemoryStatus, GlobalReAlloc, GlobalSize, GlobalUnlock, HeapAlloc, HeapCreate, HeapDestroy, HeapFree, HeapReAlloc, HeapSize, InitializeCriticalSection, InitializeCriticalSectionAndSpinCount, InterlockedCompareExchange, InterlockedDecrement, InterlockedExchange, InterlockedIncrement, IsBadCodePtr, IsBadReadPtr, IsBadWritePtr, IsDBCSLeadByte, IsDebuggerPresent, IsValidCodePage, IsValidLocale, LCMapStringA, LCMapStringW, LeaveCriticalSection, LoadLibraryA, LoadLibraryExA, LoadLibraryExW, LoadLibraryW, LoadResource, LocalAlloc, LocalFileTimeToFileTime, LocalFree, LocalReAlloc, LockFile, LockResource, MapViewOfFile, MoveFileA, MoveFileExA, MulDiv, MultiByteToWideChar, OpenMutexA, OpenProcess, OpenProcessToken, OutputDebugStringA, Process32First, Process32Next, QueryPerformanceCounter, RaiseException, ReadFile, ReadProcessMemory, RegCloseKey, RegCreateKeyExA, RegCreateKeyExW, RegDeleteValueA, RegDeleteValueW, RegEnumKeyExA, RegEnumValueA, RegFlushKey, RegOpenKeyExA, RegOpenKeyExW, RegQueryInfoKeyA, RegQueryValueExA, RegQueryValueExW, RegSetValueExA, RegSetValueExW, ReleaseMutex, RemoveDirectoryA, ResetEvent, ResumeThread, RtlUnwind, SearchPathA, SetCurrentDirectoryA, SetEndOfFile, SetEnvironmentVariableA, SetErrorMode, SetEvent, SetFileAttributesA, SetFileAttributesW, SetFilePointer, SetFileTime, SetHandleCount, SetLastError, SetStdHandle, SetThreadLocale, SetThreadPriority, SetUnhandledExceptionFilter, SizeofResource, Sleep, SuspendThread, SystemTimeToFileTime, TerminateProcess, TerminateThread, TlsAlloc, TlsFree, TlsGetValue, TlsSetValue, UnhandledExceptionFilter, UnlockFile, UnmapViewOfFile, VirtualAlloc, VirtualAllocEx, VirtualFree, VirtualProtect, VirtualProtectEx, VirtualQuery, WaitForMultipleObjects, WaitForSingleObject, WideCharToMultiByte, WinExec, WriteConsoleA, WriteConsoleW, WriteFile, WritePrivateProfileStringA, WriteProcessMemory, lstrcatA, lstrcmpA, lstrcmpW, lstrcmpiA, lstrcmpiW, lstrcpyA, lstrcpyW, lstrcpynA, lstrlenA, lstrlenW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				2
+			</td>
+			<td>
+				234
+			</td>
+			<td>
+				KernelBase.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 KernelBase.dll is the Windows NT BASE API Client DLL.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				AdjustTokenPrivileges, CharLowerA, CharLowerBuffA, CharNextA, CharNextW, CharPrevA, CharUpperA, CharUpperBuffA, CloseHandle, CompareFileTime, CompareStringA, CompareStringW, CreateDirectoryA, CreateDirectoryW, CreateEventA, CreateEventW, CreateFileA, CreateFileW, CreateMutexA, CreatePipe, CreateProcessA, CreateProcessW, CreateRemoteThread, CreateThread, DeleteCriticalSection, DeleteFileA, DeleteFileW, DeviceIoControl, DisableThreadLibraryCalls, DuplicateHandle, EnterCriticalSection, EnumSystemLocalesA, ExitProcess, ExitThread, ExpandEnvironmentStringsA, FileTimeToLocalFileTime, FileTimeToSystemTime, FindClose, FindFirstFileA, FindFirstFileW, FindNextFileA, FindNextFileW, FindResourceW, FlushFileBuffers, FormatMessageA, FormatMessageW, FreeEnvironmentStringsA, FreeEnvironmentStringsW, FreeLibrary, FreeResource, FreeSid, GetACP, GetCPInfo, GetCommandLineA, GetCommandLineW, GetConsoleCP, GetConsoleMode, GetConsoleOutputCP, GetCurrentDirectoryA, GetCurrentProcess, GetCurrentProcessId, GetCurrentThread, GetCurrentThreadId, GetDateFormatA, GetDiskFreeSpaceA, GetDriveTypeA, GetEnvironmentStrings, GetEnvironmentStringsW, GetEnvironmentVariableA, GetExitCodeProcess, GetExitCodeThread, GetFileAttributesA, GetFileAttributesW, GetFileSize, GetFileTime, GetFileType, GetFileVersionInfoA, GetFileVersionInfoSizeA, GetFullPathNameA, GetLastError, GetLocalTime, GetLocaleInfoA, GetLocaleInfoW, GetModuleFileNameA, GetModuleFileNameW, GetModuleHandleA, GetModuleHandleW, GetOEMCP, GetProcAddress, GetProcessHeap, GetStartupInfoW, GetStdHandle, GetStringTypeA, GetStringTypeW, GetSystemDirectoryA, GetSystemInfo, GetSystemTime, GetSystemTimeAsFileTime, GetTempFileNameA, GetTempPathA, GetTempPathW, GetThreadContext, GetThreadLocale, GetTickCount, GetTimeFormatA, GetTimeZoneInformation, GetTokenInformation, GetUserDefaultLCID, GetUserDefaultLangID, GetVersion, GetVersionExA, GetVersionExW, GetVolumeInformationA, GetWindowsDirectoryA, GlobalAlloc, GlobalFree, HeapAlloc, HeapCreate, HeapDestroy, HeapFree, HeapReAlloc, HeapSize, InitializeCriticalSection, InitializeCriticalSectionAndSpinCount, InterlockedCompareExchange, InterlockedDecrement, InterlockedExchange, InterlockedIncrement, IsDBCSLeadByte, IsDebuggerPresent, IsValidCodePage, IsValidLocale, LCMapStringA, LCMapStringW, LeaveCriticalSection, LoadLibraryA, LoadLibraryExA, LoadLibraryExW, LoadLibraryW, LoadResource, LoadStringA, LoadStringW, LocalAlloc, LocalFileTimeToFileTime, LocalFree, LocalReAlloc, LockFile, LockResource, MapViewOfFile, MulDiv, MultiByteToWideChar, OpenProcess, OpenProcessToken, OutputDebugStringA, QueryPerformanceCounter, RaiseException, ReadFile, ReadProcessMemory, RegCloseKey, RegCreateKeyExA, RegCreateKeyExW, RegDeleteValueA, RegDeleteValueW, RegEnumKeyExA, RegEnumValueA, RegFlushKey, RegOpenKeyExA, RegOpenKeyExW, RegQueryInfoKeyA, RegQueryValueExA, RegQueryValueExW, RegSetValueExA, RegSetValueExW, ReleaseMutex, RemoveDirectoryA, ResetEvent, ResumeThread, SearchPathA, SetCurrentDirectoryA, SetEndOfFile, SetEnvironmentVariableA, SetErrorMode, SetEvent, SetFileAttributesA, SetFileAttributesW, SetFilePointer, SetFileTime, SetHandleCount, SetLastError, SetStdHandle, SetThreadLocale, SetThreadPriority, SetUnhandledExceptionFilter, SizeofResource, Sleep, SuspendThread, SystemTimeToFileTime, TerminateProcess, TerminateThread, TlsAlloc, TlsFree, TlsGetValue, TlsSetValue, UnhandledExceptionFilter, UnlockFile, UnmapViewOfFile, VerQueryValueA, VerQueryValueW, VirtualAlloc, VirtualAllocEx, VirtualFree, VirtualProtect, VirtualProtectEx, VirtualQuery, WaitForMultipleObjects, WaitForSingleObject, WideCharToMultiByte, WriteConsoleA, WriteConsoleW, WriteFile, WriteProcessMemory, _cexit, _exit, _initterm, _onexit, exit, lstrcmpA, lstrcmpW, lstrcmpiA, lstrcmpiW, lstrcpynA, lstrlenA, lstrlenW, time,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				3
+			</td>
+			<td>
+				214
+			</td>
+			<td>
+				user32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 user32.dll is a module that contains Windows API functions related the Windows user interface (Window handling, basic UI functions, and so forth).
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				ActivateKeyboardLayout, AdjustWindowRectEx, AppendMenuA, BeginPaint, BringWindowToTop, CallNextHookEx, CallWindowProcA, CharLowerA, CharLowerBuffA, CharNextA, CharNextW, CharPrevA, CharToOemA, CharUpperA, CharUpperBuffA, CheckDlgButton, CheckMenuItem, ClientToScreen, CloseClipboard, CopyRect, CreateDialogParamA, CreateIcon, CreateMenu, CreatePopupMenu, CreateWindowExA, CreateWindowExW, DefFrameProcA, DefMDIChildProcA, DefWindowProcA, DefWindowProcW, DeleteMenu, DestroyCursor, DestroyIcon, DestroyMenu, DestroyWindow, DialogBoxParamA, DispatchMessageA, DispatchMessageW, DrawEdge, DrawFocusRect, DrawFrameControl, DrawIcon, DrawIconEx, DrawMenuBar, EmptyClipboard, EnableMenuItem, EnableScrollBar, EnableWindow, EndDialog, EndPaint, EnumChildWindows, EnumThreadWindows, EnumWindows, EqualRect, ExitWindowsEx, FillRect, FindWindowA, FindWindowExA, FrameRect, GetActiveWindow, GetCapture, GetClassInfoA, GetClassLongA, GetClassNameA, GetClientRect, GetClipboardData, GetCursor, GetCursorPos, GetDC, GetDCEx, GetDesktopWindow, GetDlgCtrlID, GetDlgItem, GetDlgItemTextA, GetFocus, GetForegroundWindow, GetIconInfo, GetKeyNameTextA, GetKeyState, GetKeyboardLayout, GetKeyboardLayoutList, GetKeyboardState, GetKeyboardType, GetLastActivePopup, GetMenu, GetMenuItemCount, GetMenuItemID, GetMenuItemInfoA, GetMenuState, GetMenuStringA, GetMessageA, GetMessagePos, GetMessageTime, GetParent, GetPropA, GetScrollInfo, GetScrollPos, GetScrollRange, GetSubMenu, GetSysColor, GetSysColorBrush, GetSystemMenu, GetSystemMetrics, GetTopWindow, GetWindow, GetWindowDC, GetWindowLongA, GetWindowLongW, GetWindowPlacement, GetWindowRect, GetWindowTextA, GetWindowTextLengthA, GetWindowTextW, GetWindowThreadProcessId, InflateRect, InsertMenuA, InsertMenuItemA, IntersectRect, InvalidateRect, IsChild, IsDialogMessageA, IsIconic, IsRectEmpty, IsWindow, IsWindowEnabled, IsWindowVisible, IsZoomed, KillTimer, LoadBitmapA, LoadCursorA, LoadCursorW, LoadIconA, LoadImageA, LoadKeyboardLayoutA, LoadStringA, LoadStringW, MapVirtualKeyA, MapWindowPoints, MessageBeep, MessageBoxA, MessageBoxIndirectA, MessageBoxW, MoveWindow, MsgWaitForMultipleObjects, OemToCharA, OffsetRect, OpenClipboard, PeekMessageA, PeekMessageW, PostMessageA, PostMessageW, PostQuitMessage, PostThreadMessageA, PtInRect, RedrawWindow, RegisterClassA, RegisterClassExA, RegisterClipboardFormatA, RegisterWindowMessageA, ReleaseCapture, ReleaseDC, RemoveMenu, RemovePropA, ScreenToClient, ScrollWindow, SendDlgItemMessageA, SendMessageA, SendMessageTimeoutA, SendMessageW, SetActiveWindow, SetCapture, SetClassLongA, SetClipboardData, SetCursor, SetCursorPos, SetDlgItemTextA, SetFocus, SetForegroundWindow, SetMenu, SetMenuItemInfoA, SetParent, SetPropA, SetRect, SetScrollInfo, SetScrollPos, SetScrollRange, SetTimer, SetWindowLongA, SetWindowLongW, SetWindowPlacement, SetWindowPos, SetWindowTextA, SetWindowTextW, SetWindowsHookExA, ShowCursor, ShowOwnedPopups, ShowScrollBar, ShowWindow, SystemParametersInfoA, TrackPopupMenu, TranslateAcceleratorA, TranslateMDISysAccel, TranslateMessage, UnhookWindowsHookEx, UnregisterClassA, UpdateWindow, ValidateRect, WaitMessage, WinHelpA, WindowFromPoint, keybd_event, wsprintfA, wsprintfW, wvsprintfA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				4
+			</td>
+			<td>
+				98
+			</td>
+			<td>
+				msvbvm60.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 msvbvm60.dll is a module for the Microsoft Visual Basic virtual machine.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				DllFunctionCall, EVENT_SINK_AddRef, EVENT_SINK_QueryInterface, EVENT_SINK_Release, MethCallEngine, ProcCallEngine, _CIatan, _CIcos, _CIexp, _CIlog, _CIsin, _CIsqrt, _CItan, __vbaAryConstruct2, __vbaAryCopy, __vbaAryDestruct, __vbaAryLock, __vbaAryMove, __vbaAryUnlock, __vbaAryVar, __vbaBoolVarNull, __vbaChkstk, __vbaEnd, __vbaErase, __vbaErrorOverflow, __vbaExitProc, __vbaFPException, __vbaFileClose, __vbaFileOpen, __vbaFixstrConstruct, __vbaFpI4, __vbaFreeObj, __vbaFreeObjList, __vbaFreeStr, __vbaFreeStrList, __vbaFreeVar, __vbaFreeVarList, __vbaGenerateBoundsError, __vbaGet3, __vbaHresultCheckObj, __vbaI2I4, __vbaI2Var, __vbaI4ErrVar, __vbaI4Var, __vbaInStr, __vbaInStrVar, __vbaLenBstr, __vbaLsetFixstr, __vbaNew2, __vbaObjSet, __vbaObjSetAddref, __vbaOnError, __vbaPutOwner3, __vbaRecAnsiToUni, __vbaRecUniToAnsi, __vbaRedim, __vbaRedimPreserve, __vbaSetSystemError, __vbaStrCat, __vbaStrCmp, __vbaStrCopy, __vbaStrFixstr, __vbaStrI2, __vbaStrI4, __vbaStrMove, __vbaStrToAnsi, __vbaStrToUnicode, __vbaStrVarCopy, __vbaStrVarMove, __vbaStrVarVal, __vbaUI1I2, __vbaUbound, __vbaVar2Vec, __vbaVarAdd, __vbaVarCat, __vbaVarCopy, __vbaVarDup, __vbaVarIndexLoad, __vbaVarMove, __vbaVarSub, __vbaVarTstEq, __vbaVarTstNe, __vbaVarVargNofree, __vbaVarZero, _adj_fdiv_m16i, _adj_fdiv_m32, _adj_fdiv_m32i, _adj_fdiv_m64, _adj_fdiv_r, _adj_fdivr_m16i, _adj_fdivr_m32, _adj_fdivr_m32i, _adj_fdivr_m64, _adj_fpatan, _adj_fprem, _adj_fprem1, _adj_fptan, _allmul,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				5
+			</td>
+			<td>
+				98
+			</td>
+			<td>
+				expsrv.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 File that contains functions to work with VBA Run-time - Expression Service.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				DllFunctionCall, EVENT_SINK_AddRef, EVENT_SINK_QueryInterface, EVENT_SINK_Release, MethCallEngine, ProcCallEngine, _CIatan, _CIcos, _CIexp, _CIlog, _CIsin, _CIsqrt, _CItan, __vbaAryConstruct2, __vbaAryCopy, __vbaAryDestruct, __vbaAryLock, __vbaAryMove, __vbaAryUnlock, __vbaAryVar, __vbaBoolVarNull, __vbaChkstk, __vbaEnd, __vbaErase, __vbaErrorOverflow, __vbaExitProc, __vbaFPException, __vbaFileClose, __vbaFileOpen, __vbaFixstrConstruct, __vbaFpI4, __vbaFreeObj, __vbaFreeObjList, __vbaFreeStr, __vbaFreeStrList, __vbaFreeVar, __vbaFreeVarList, __vbaGenerateBoundsError, __vbaGet3, __vbaHresultCheckObj, __vbaI2I4, __vbaI2Var, __vbaI4ErrVar, __vbaI4Var, __vbaInStr, __vbaInStrVar, __vbaLenBstr, __vbaLsetFixstr, __vbaNew2, __vbaObjSet, __vbaObjSetAddref, __vbaOnError, __vbaPutOwner3, __vbaRecAnsiToUni, __vbaRecUniToAnsi, __vbaRedim, __vbaRedimPreserve, __vbaSetSystemError, __vbaStrCat, __vbaStrCmp, __vbaStrCopy, __vbaStrFixstr, __vbaStrI2, __vbaStrI4, __vbaStrMove, __vbaStrToAnsi, __vbaStrToUnicode, __vbaStrVarCopy, __vbaStrVarMove, __vbaStrVarVal, __vbaUI1I2, __vbaUbound, __vbaVar2Vec, __vbaVarAdd, __vbaVarCat, __vbaVarCopy, __vbaVarDup, __vbaVarIndexLoad, __vbaVarMove, __vbaVarSub, __vbaVarTstEq, __vbaVarTstNe, __vbaVarVargNofree, __vbaVarZero, _adj_fdiv_m16i, _adj_fdiv_m32, _adj_fdiv_m32i, _adj_fdiv_m64, _adj_fdiv_r, _adj_fdivr_m16i, _adj_fdivr_m32, _adj_fdivr_m32i, _adj_fdivr_m64, _adj_fpatan, _adj_fprem, _adj_fprem1, _adj_fptan, _allmul,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				6
+			</td>
+			<td>
+				76
+			</td>
+			<td>
+				gdi32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 gdi32.dll contains functions for the Windows GDI (Graphical Device Interface) which assists windows in creating simple 2-dimensional objects.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				BitBlt, CopyEnhMetaFileA, CreateBitmap, CreateBrushIndirect, CreateCompatibleBitmap, CreateCompatibleDC, CreateDCA, CreateDIBSection, CreateDIBitmap, CreateFontIndirectA, CreateHalftonePalette, CreatePalette, CreatePenIndirect, CreateRectRgn, CreateSolidBrush, DeleteDC, DeleteEnhMetaFile, DeleteObject, Escape, ExcludeClipRect, ExtTextOutA, GdiFlush, GetBitmapBits, GetBrushOrgEx, GetClipBox, GetCurrentPositionEx, GetDCOrgEx, GetDIBColorTable, GetDIBits, GetDeviceCaps, GetEnhMetaFileBits, GetEnhMetaFileHeader, GetEnhMetaFilePaletteEntries, GetObjectA, GetPaletteEntries, GetPixel, GetStockObject, GetSystemPaletteEntries, GetTextExtentPoint32A, GetTextExtentPointA, GetTextMetricsA, GetWinMetaFileBits, GetWindowOrgEx, IntersectClipRect, LPtoDP, LineTo, MaskBlt, MoveToEx, PatBlt, PlayEnhMetaFile, Polyline, RealizePalette, RectVisible, Rectangle, RestoreDC, SaveDC, SelectObject, SelectPalette, SetBkColor, SetBkMode, SetBrushOrgEx, SetDIBColorTable, SetEnhMetaFileBits, SetMapMode, SetPixel, SetROP2, SetStretchBltMode, SetTextColor, SetViewportExtEx, SetViewportOrgEx, SetWinMetaFileBits, SetWindowExtEx, SetWindowOrgEx, StretchBlt, TextOutA, UnrealizeObject,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				7
+			</td>
+			<td>
+				63
+			</td>
+			<td>
+				msvcrt.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 msvcrt.dll is a module containing standard C library functions such as printf, memcpy, and cos. It is a part of the Microsoft C Runtime Library.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				_CIatan, _CIcos, _CIexp, _CIlog, _CIsin, _CIsqrt, _CItan, _XcptFilter, __CxxFrameHandler, __dllonexit, __p__commode, __p__fmode, __set_app_type, __setusermatherr, _acmdln, _adj_fdiv_m16i, _adj_fdiv_m32, _adj_fdiv_m32i, _adj_fdiv_m64, _adj_fdiv_r, _adj_fdivr_m16i, _adj_fdivr_m32, _adj_fdivr_m32i, _adj_fdivr_m64, _adj_fpatan, _adj_fprem, _adj_fprem1, _adj_fptan, _adjust_fdiv, _cexit, _controlfp, _except_handler3, _exit, _initterm, _onexit, _stricmp, _strlwr, atoi, exit, fclose, fopen, free, fwrite, malloc, memcpy, memmove, memset, rand, sprintf, srand, strcat, strchr, strcmp, strcpy, strlen, strncmp, strncpy, strrchr, strstr, time, wcscmp, wcscpy, wcslen,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				8
+			</td>
+			<td>
+				63
+			</td>
+			<td>
+				msvcrt40.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 msvcrt40.dll is a module containing standard C library functions such as printf, memcpy, and cos. It is a part of the Microsoft C Runtime Library.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				_CIatan, _CIcos, _CIexp, _CIlog, _CIsin, _CIsqrt, _CItan, _XcptFilter, __CxxFrameHandler, __dllonexit, __p__commode, __p__fmode, __set_app_type, __setusermatherr, _acmdln, _adj_fdiv_m16i, _adj_fdiv_m32, _adj_fdiv_m32i, _adj_fdiv_m64, _adj_fdiv_r, _adj_fdivr_m16i, _adj_fdivr_m32, _adj_fdivr_m32i, _adj_fdivr_m64, _adj_fpatan, _adj_fprem, _adj_fprem1, _adj_fptan, _adjust_fdiv, _cexit, _controlfp, _except_handler3, _exit, _initterm, _onexit, _stricmp, _strlwr, atoi, exit, fclose, fopen, free, fwrite, malloc, memcpy, memmove, memset, rand, sprintf, srand, strcat, strchr, strcmp, strcpy, strlen, strncmp, strncpy, strrchr, strstr, time, wcscmp, wcscpy, wcslen,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				9
+			</td>
+			<td>
+				61
+			</td>
+			<td>
+				msvcrt20.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 msvcrt20.dll is a module containing standard C library functions such as printf, memcpy, and cos. It is a part of the Microsoft C Runtime Library.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				_CIatan, _CIcos, _CIexp, _CIlog, _CIsin, _CIsqrt, _CItan, _XcptFilter, __CxxFrameHandler, __dllonexit, __p__commode, __p__fmode, _acmdln, _adj_fdiv_m16i, _adj_fdiv_m32, _adj_fdiv_m32i, _adj_fdiv_m64, _adj_fdiv_r, _adj_fdivr_m16i, _adj_fdivr_m32, _adj_fdivr_m32i, _adj_fdivr_m64, _adj_fpatan, _adj_fprem, _adj_fprem1, _adj_fptan, _adjust_fdiv, _cexit, _controlfp, _except_handler3, _exit, _initterm, _onexit, _stricmp, _strlwr, atoi, exit, fclose, fopen, free, fwrite, malloc, memcpy, memmove, memset, rand, sprintf, srand, strcat, strchr, strcmp, strcpy, strlen, strncmp, strncpy, strrchr, strstr, time, wcscmp, wcscpy, wcslen,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				10
+			</td>
+			<td>
+				48
+			</td>
+			<td>
+				msvcr120_clr0400.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				_CIatan, _CIcos, _CIexp, _CIlog, _CIsin, _CIsqrt, _CItan, _XcptFilter, __CxxFrameHandler, __dllonexit, __p__commode, __p__fmode, __set_app_type, __setusermatherr, _acmdln, _cexit, _controlfp, _except_handler3, _exit, _initterm, _onexit, _stricmp, _strlwr, atoi, exit, fclose, fopen, free, fwrite, malloc, memcpy, memmove, memset, rand, sprintf, srand, strcat, strchr, strcmp, strcpy, strlen, strncmp, strncpy, strrchr, strstr, wcscmp, wcscpy, wcslen,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				11
+			</td>
+			<td>
+				43
+			</td>
+			<td>
+				crtdll.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 crtdll.dll is a module containing standard C library functions such as printf, memcpy, and cos.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				_CIatan, _CIcos, _CIexp, _CIlog, _CIsin, _CIsqrt, _CItan, _XcptFilter, __dllonexit, __getmainargs, _cexit, _controlfp, _exit, _initterm, _onexit, _stricmp, _strlwr, atoi, exit, fclose, fopen, free, fwrite, malloc, memcpy, memmove, memset, rand, sprintf, srand, strcat, strchr, strcmp, strcpy, strlen, strncmp, strncpy, strrchr, strstr, time, wcscmp, wcscpy, wcslen,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				12
+			</td>
+			<td>
+				42
+			</td>
+			<td>
+				ucrtbase.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				_CIatan, _CIcos, _CIexp, _CIlog, _CIsin, _CIsqrt, _CItan, __CxxFrameHandler, __p__commode, __p__fmode, __setusermatherr, _cexit, _controlfp, _except_handler3, _exit, _initterm, _stricmp, _strlwr, atoi, exit, fclose, fopen, free, fwrite, malloc, memcpy, memmove, memset, rand, srand, strcat, strchr, strcmp, strcpy, strlen, strncmp, strncpy, strrchr, strstr, wcscmp, wcscpy, wcslen,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				13
+			</td>
+			<td>
+				35
+			</td>
+			<td>
+				advapi32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 advapi32.dll is a part of an advanced API services library supporting numerous APIs including many security and registry calls.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				AdjustTokenPrivileges, CloseServiceHandle, ControlService, CreateServiceA, DeleteService, FreeSid, GetTokenInformation, GetUserNameA, LookupPrivilegeValueA, OpenProcessToken, OpenSCManagerA, OpenServiceA, QueryServiceStatus, RegCloseKey, RegCreateKeyA, RegCreateKeyExA, RegCreateKeyExW, RegDeleteKeyA, RegDeleteValueA, RegDeleteValueW, RegEnumKeyA, RegEnumKeyExA, RegEnumValueA, RegFlushKey, RegOpenKeyA, RegOpenKeyExA, RegOpenKeyExW, RegQueryInfoKeyA, RegQueryValueA, RegQueryValueExA, RegQueryValueExW, RegSetValueExA, RegSetValueExW, SetServiceStatus, StartServiceA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				14
+			</td>
+			<td>
+				35
+			</td>
+			<td>
+				api-ms-win-core-file-l1-2-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CompareFileTime, CreateDirectoryA, CreateDirectoryW, CreateFileA, CreateFileW, DeleteFileA, DeleteFileW, FileTimeToLocalFileTime, FindClose, FindFirstFileA, FindFirstFileW, FindNextFileA, FindNextFileW, FlushFileBuffers, GetDiskFreeSpaceA, GetDriveTypeA, GetFileAttributesA, GetFileAttributesW, GetFileSize, GetFileTime, GetFileType, GetFullPathNameA, GetTempPathA, GetTempPathW, LocalFileTimeToFileTime, LockFile, ReadFile, RemoveDirectoryA, SetEndOfFile, SetFileAttributesA, SetFileAttributesW, SetFilePointer, SetFileTime, UnlockFile, WriteFile,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				15
+			</td>
+			<td>
+				33
+			</td>
+			<td>
+				api-ms-win-core-file-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-file-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-file-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CompareFileTime, CreateDirectoryA, CreateDirectoryW, CreateFileA, CreateFileW, DeleteFileA, DeleteFileW, FileTimeToLocalFileTime, FindClose, FindFirstFileA, FindFirstFileW, FindNextFileA, FindNextFileW, FlushFileBuffers, GetDiskFreeSpaceA, GetDriveTypeA, GetFileAttributesA, GetFileAttributesW, GetFileSize, GetFileTime, GetFileType, GetFullPathNameA, LocalFileTimeToFileTime, LockFile, ReadFile, RemoveDirectoryA, SetEndOfFile, SetFileAttributesA, SetFileAttributesW, SetFilePointer, SetFileTime, UnlockFile, WriteFile,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				16
+			</td>
+			<td>
+				25
+			</td>
+			<td>
+				ntdll.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				ntdll.dll is a module that contains NT system functions. The ntdll.dll file is a file created by Microsoft that has a description of "NT Layer DLL" and is the file that contains NT kernel functions.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				RtlUnwind, _CIcos, _CIlog, _CIsin, _CIsqrt, _allmul, _stricmp, _strlwr, atoi, memcpy, memmove, memset, sprintf, strcat, strchr, strcmp, strcpy, strlen, strncmp, strncpy, strrchr, strstr, wcscmp, wcscpy, wcslen,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				17
+			</td>
+			<td>
+				25
+			</td>
+			<td>
+				comctl32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 comctl32.dll is a module that contains common GUI components used by Windows applications.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				ImageList_Add, ImageList_AddMasked, ImageList_BeginDrag, ImageList_Create, ImageList_Destroy, ImageList_DragEnter, ImageList_DragLeave, ImageList_DragMove, ImageList_DragShowNolock, ImageList_Draw, ImageList_DrawEx, ImageList_EndDrag, ImageList_GetBkColor, ImageList_GetDragImage, ImageList_GetIconSize, ImageList_GetImageCount, ImageList_Read, ImageList_Remove, ImageList_ReplaceIcon, ImageList_SetBkColor, ImageList_SetDragCursorImage, ImageList_SetIconSize, ImageList_Write, InitCommonControls, InitCommonControlsEx,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				18
+			</td>
+			<td>
+				25
+			</td>
+			<td>
+				api-ms-win-core-processthreads-l1-1-2.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CreateProcessA, CreateProcessW, CreateRemoteThread, CreateThread, ExitProcess, ExitThread, GetCurrentProcess, GetCurrentProcessId, GetCurrentThread, GetCurrentThreadId, GetExitCodeProcess, GetExitCodeThread, GetStartupInfoW, GetThreadContext, OpenProcess, OpenProcessToken, ResumeThread, SetThreadPriority, SuspendThread, TerminateProcess, TerminateThread, TlsAlloc, TlsFree, TlsGetValue, TlsSetValue,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				19
+			</td>
+			<td>
+				23
+			</td>
+			<td>
+				api-ms-win-core-processthreads-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-processthreads-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-processthreads-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CreateProcessA, CreateProcessW, CreateRemoteThread, CreateThread, ExitProcess, ExitThread, GetCurrentProcess, GetCurrentProcessId, GetCurrentThread, GetCurrentThreadId, GetExitCodeProcess, GetExitCodeThread, GetStartupInfoW, OpenProcessToken, ResumeThread, SetThreadPriority, SuspendThread, TerminateProcess, TerminateThread, TlsAlloc, TlsFree, TlsGetValue, TlsSetValue,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				20
+			</td>
+			<td>
+				19
+			</td>
+			<td>
+				ms-win-downlevel-advapi32-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				AdjustTokenPrivileges, FreeSid, GetTokenInformation, OpenProcessToken, RegCloseKey, RegCreateKeyExA, RegCreateKeyExW, RegDeleteValueA, RegDeleteValueW, RegEnumKeyExA, RegEnumValueA, RegFlushKey, RegOpenKeyExA, RegOpenKeyExW, RegQueryInfoKeyA, RegQueryValueExA, RegQueryValueExW, RegSetValueExA, RegSetValueExW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				21
+			</td>
+			<td>
+				18
+			</td>
+			<td>
+				api-ms-win-core-kernel32-legacy-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CopyFileA, CreateFileMappingA, FileTimeToDosDateTime, FindResourceA, FindResourceW, GetComputerNameA, GetShortPathNameA, GetStartupInfoA, GetStringTypeExA, GetTempPathA, GlobalMemoryStatus, LoadLibraryA, LoadLibraryW, MoveFileA, MoveFileExA, MulDiv, SetHandleCount, WaitForMultipleObjects,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				22
+			</td>
+			<td>
+				17
+			</td>
+			<td>
+				api-ms-win-core-localization-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				EnumSystemLocalesA, FormatMessageA, FormatMessageW, GetACP, GetCPInfo, GetLocaleInfoA, GetLocaleInfoW, GetOEMCP, GetThreadLocale, GetUserDefaultLCID, GetUserDefaultLangID, IsDBCSLeadByte, IsValidCodePage, IsValidLocale, LCMapStringA, LCMapStringW, SetThreadLocale,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				23
+			</td>
+			<td>
+				17
+			</td>
+			<td>
+				api-ms-win-core-localization-l1-2-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				EnumSystemLocalesA, FormatMessageA, FormatMessageW, GetACP, GetCPInfo, GetLocaleInfoA, GetLocaleInfoW, GetOEMCP, GetThreadLocale, GetUserDefaultLCID, GetUserDefaultLangID, IsDBCSLeadByte, IsValidCodePage, IsValidLocale, LCMapStringA, LCMapStringW, SetThreadLocale,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				24
+			</td>
+			<td>
+				15
+			</td>
+			<td>
+				api-ms-win-core-registry-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				RegCloseKey, RegCreateKeyExA, RegCreateKeyExW, RegDeleteValueA, RegDeleteValueW, RegEnumKeyExA, RegEnumValueA, RegFlushKey, RegOpenKeyExA, RegOpenKeyExW, RegQueryInfoKeyA, RegQueryValueExA, RegQueryValueExW, RegSetValueExA, RegSetValueExW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				25
+			</td>
+			<td>
+				15
+			</td>
+			<td>
+				api-ms-win-core-libraryloader-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				DisableThreadLibraryCalls, FreeLibrary, FreeResource, GetModuleFileNameA, GetModuleFileNameW, GetModuleHandleA, GetModuleHandleW, GetProcAddress, LoadLibraryExA, LoadLibraryExW, LoadResource, LoadStringA, LoadStringW, LockResource, SizeofResource,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				26
+			</td>
+			<td>
+				14
+			</td>
+			<td>
+				ole32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 ole32.dll is a library which contains core OLE functions.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CLSIDFromProgID, CLSIDFromString, CoCreateInstance, CoGetClassObject, CoInitialize, CoTaskMemAlloc, CoTaskMemFree, CoUninitialize, CreateStreamOnHGlobal, GetErrorInfo, IsEqualGUID, OleInitialize, OleUninitialize, StringFromCLSID,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				27
+			</td>
+			<td>
+				14
+			</td>
+			<td>
+				oleaut32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 oleaut32.dll is a library which contains core OLE functions.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetErrorInfo, SafeArrayCreate, SafeArrayGetLBound, SafeArrayGetUBound, SafeArrayPtrOfIndex, SysAllocStringLen, SysFreeString, SysReAllocStringLen, VariantChangeType, VariantChangeTypeEx, VariantClear, VariantCopy, VariantCopyInd, VariantInit,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				28
+			</td>
+			<td>
+				14
+			</td>
+			<td>
+				api-ms-win-core-processenvironment-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				ExpandEnvironmentStringsA, FreeEnvironmentStringsA, FreeEnvironmentStringsW, GetCommandLineA, GetCommandLineW, GetCurrentDirectoryA, GetEnvironmentStrings, GetEnvironmentStringsW, GetEnvironmentVariableA, GetStdHandle, SearchPathA, SetCurrentDirectoryA, SetEnvironmentVariableA, SetStdHandle,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				29
+			</td>
+			<td>
+				13
+			</td>
+			<td>
+				api-ms-win-core-processenvironment-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				ExpandEnvironmentStringsA, FreeEnvironmentStringsA, FreeEnvironmentStringsW, GetCommandLineA, GetCommandLineW, GetCurrentDirectoryA, GetEnvironmentStrings, GetEnvironmentStringsW, GetEnvironmentVariableA, GetStdHandle, SetCurrentDirectoryA, SetEnvironmentVariableA, SetStdHandle,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				30
+			</td>
+			<td>
+				13
+			</td>
+			<td>
+				api-ms-win-core-synch-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CreateEventA, CreateEventW, CreateMutexA, DeleteCriticalSection, EnterCriticalSection, InitializeCriticalSection, InitializeCriticalSectionAndSpinCount, LeaveCriticalSection, ReleaseMutex, ResetEvent, SetEvent, Sleep, WaitForSingleObject,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				31
+			</td>
+			<td>
+				13
+			</td>
+			<td>
+				api-ms-win-core-libraryloader-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				DisableThreadLibraryCalls, FreeLibrary, FreeResource, GetModuleFileNameA, GetModuleFileNameW, GetModuleHandleA, GetModuleHandleW, GetProcAddress, LoadLibraryExA, LoadLibraryExW, LoadResource, LockResource, SizeofResource,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				32
+			</td>
+			<td>
+				12
+			</td>
+			<td>
+				api-ms-win-core-synch-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-synch-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-synch-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CreateEventA, CreateEventW, CreateMutexA, DeleteCriticalSection, EnterCriticalSection, InitializeCriticalSection, InitializeCriticalSectionAndSpinCount, LeaveCriticalSection, ReleaseMutex, ResetEvent, SetEvent, WaitForSingleObject,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				33
+			</td>
+			<td>
+				11
+			</td>
+			<td>
+				shell32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 shell32.dll is a library which contains Windows Shell API functions, which are used when opening web pages and files.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				SHBrowseForFolderA, SHFileOperationA, SHGetFileInfoA, SHGetMalloc, SHGetPathFromIDListA, SHGetSpecialFolderLocation, SHGetSpecialFolderPathA, ShellExecuteA, ShellExecuteExA, ShellExecuteW, Shell_NotifyIconA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				34
+			</td>
+			<td>
+				10
+			</td>
+			<td>
+				ws2_32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 File that contains the Windows Sockets API used by most Internet and network applications to handle network connections.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				WSACleanup, WSAStartup, closesocket, connect, gethostbyname, htons, inet_addr, recv, send, socket,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				35
+			</td>
+			<td>
+				10
+			</td>
+			<td>
+				api-ms-win-core-sysinfo-l1-2-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetLocalTime, GetSystemDirectoryA, GetSystemInfo, GetSystemTime, GetSystemTimeAsFileTime, GetTickCount, GetVersion, GetVersionExA, GetVersionExW, GetWindowsDirectoryA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				36
+			</td>
+			<td>
+				10
+			</td>
+			<td>
+				API-MS-Win-Core-Heap-Obsolete-L1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GlobalAlloc, GlobalFree, GlobalHandle, GlobalLock, GlobalReAlloc, GlobalSize, GlobalUnlock, LocalAlloc, LocalFree, LocalReAlloc,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				37
+			</td>
+			<td>
+				10
+			</td>
+			<td>
+				api-ms-win-core-memory-l1-1-2.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				MapViewOfFile, ReadProcessMemory, UnmapViewOfFile, VirtualAlloc, VirtualAllocEx, VirtualFree, VirtualProtect, VirtualProtectEx, VirtualQuery, WriteProcessMemory,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				38
+			</td>
+			<td>
+				10
+			</td>
+			<td>
+				api-ms-win-core-memory-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-memory-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-memory-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				MapViewOfFile, ReadProcessMemory, UnmapViewOfFile, VirtualAlloc, VirtualAllocEx, VirtualFree, VirtualProtect, VirtualProtectEx, VirtualQuery, WriteProcessMemory,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				39
+			</td>
+			<td>
+				10
+			</td>
+			<td>
+				combase.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CLSIDFromProgID, CLSIDFromString, CoCreateInstance, CoGetClassObject, CoTaskMemAlloc, CoTaskMemFree, CoUninitialize, CreateStreamOnHGlobal, GetErrorInfo, StringFromCLSID,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				40
+			</td>
+			<td>
+				10
+			</td>
+			<td>
+				wsock32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 File that contains the Windows Sockets API used by most Internet and network applications to handle network connections.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				WSACleanup, WSAStartup, closesocket, connect, gethostbyname, htons, inet_addr, recv, send, socket,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				41
+			</td>
+			<td>
+				10
+			</td>
+			<td>
+				api-ms-win-core-sysinfo-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetLocalTime, GetSystemDirectoryA, GetSystemInfo, GetSystemTime, GetSystemTimeAsFileTime, GetTickCount, GetVersion, GetVersionExA, GetVersionExW, GetWindowsDirectoryA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				42
+			</td>
+			<td>
+				9
+			</td>
+			<td>
+				sechost.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CloseServiceHandle, ControlService, CreateServiceA, DeleteService, OpenSCManagerA, OpenServiceA, QueryServiceStatus, SetServiceStatus, StartServiceA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				43
+			</td>
+			<td>
+				9
+			</td>
+			<td>
+				ms-win-downlevel-ole32-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CLSIDFromProgID, CLSIDFromString, CoCreateInstance, CoGetClassObject, CoTaskMemAlloc, CoTaskMemFree, CoUninitialize, CreateStreamOnHGlobal, StringFromCLSID,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				44
+			</td>
+			<td>
+				9
+			</td>
+			<td>
+				api-ms-win-core-com-l1-1-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CLSIDFromProgID, CLSIDFromString, CoCreateInstance, CoGetClassObject, CoTaskMemAlloc, CoTaskMemFree, CoUninitialize, CreateStreamOnHGlobal, StringFromCLSID,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				45
+			</td>
+			<td>
+				9
+			</td>
+			<td>
+				api-ms-win-core-com-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CLSIDFromProgID, CLSIDFromString, CoCreateInstance, CoGetClassObject, CoTaskMemAlloc, CoTaskMemFree, CoUninitialize, CreateStreamOnHGlobal, StringFromCLSID,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				46
+			</td>
+			<td>
+				9
+			</td>
+			<td>
+				wininet.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 wininet.dll is a module that contains Internet-related functions used by Windows applications.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				HttpOpenRequestA, HttpQueryInfoA, HttpSendRequestA, InternetCloseHandle, InternetConnectA, InternetGetConnectedState, InternetOpenA, InternetOpenUrlA, InternetReadFile,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				47
+			</td>
+			<td>
+				8
+			</td>
+			<td>
+				API-MS-Win-core-string-obsolete-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				lstrcmpA, lstrcmpW, lstrcmpiA, lstrcmpiW, lstrcpyW, lstrcpynA, lstrlenA, lstrlenW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				48
+			</td>
+			<td>
+				7
+			</td>
+			<td>
+				api-ms-win-core-heap-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetProcessHeap, HeapAlloc, HeapCreate, HeapDestroy, HeapFree, HeapReAlloc, HeapSize,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				49
+			</td>
+			<td>
+				7
+			</td>
+			<td>
+				ms-win-downlevel-user32-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CharLowerA, CharLowerBuffA, CharNextA, CharNextW, CharPrevA, CharUpperA, CharUpperBuffA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				50
+			</td>
+			<td>
+				7
+			</td>
+			<td>
+				api-ms-win-core-heap-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-heap-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-heap-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetProcessHeap, HeapAlloc, HeapCreate, HeapDestroy, HeapFree, HeapReAlloc, HeapSize,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				51
+			</td>
+			<td>
+				6
+			</td>
+			<td>
+				api-ms-win-service-winsvc-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				ControlService, CreateServiceA, OpenSCManagerA, OpenServiceA, QueryServiceStatus, StartServiceA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				52
+			</td>
+			<td>
+				6
+			</td>
+			<td>
+				api-ms-win-core-stringansi-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CharLowerA, CharLowerBuffA, CharNextA, CharPrevA, CharUpperA, CharUpperBuffA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				53
+			</td>
+			<td>
+				6
+			</td>
+			<td>
+				api-ms-win-core-errorhandling-l1-1-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetLastError, RaiseException, SetErrorMode, SetLastError, SetUnhandledExceptionFilter, UnhandledExceptionFilter,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				54
+			</td>
+			<td>
+				6
+			</td>
+			<td>
+				api-ms-win-service-winsvc-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				ControlService, CreateServiceA, OpenSCManagerA, OpenServiceA, QueryServiceStatus, StartServiceA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				55
+			</td>
+			<td>
+				6
+			</td>
+			<td>
+				api-ms-win-core-errorhandling-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-errorhandling-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-errorhandling-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetLastError, RaiseException, SetErrorMode, SetLastError, SetUnhandledExceptionFilter, UnhandledExceptionFilter,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				56
+			</td>
+			<td>
+				5
+			</td>
+			<td>
+				api-ms-win-core-console-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-console-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-console-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetConsoleCP, GetConsoleMode, GetConsoleOutputCP, WriteConsoleA, WriteConsoleW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				57
+			</td>
+			<td>
+				5
+			</td>
+			<td>
+				api-ms-win-core-registry-l2-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				RegCreateKeyA, RegDeleteKeyA, RegEnumKeyA, RegOpenKeyA, RegQueryValueA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				58
+			</td>
+			<td>
+				4
+			</td>
+			<td>
+				api-ms-win-core-string-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-string-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-string-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CompareStringW, GetStringTypeW, MultiByteToWideChar, WideCharToMultiByte,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				59
+			</td>
+			<td>
+				4
+			</td>
+			<td>
+				api-ms-win-core-interlocked-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				InterlockedCompareExchange, InterlockedDecrement, InterlockedExchange, InterlockedIncrement,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				60
+			</td>
+			<td>
+				4
+			</td>
+			<td>
+				api-ms-win-core-interlocked-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-interlocked-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-interlocked-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				InterlockedCompareExchange, InterlockedDecrement, InterlockedExchange, InterlockedIncrement,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				61
+			</td>
+			<td>
+				4
+			</td>
+			<td>
+				version.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 version.dll is a module that contains application programming interface (API) functions used for Windows version checking by the applications on Windows NT.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetFileVersionInfoA, GetFileVersionInfoSizeA, VerQueryValueA, VerQueryValueW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				62
+			</td>
+			<td>
+				3
+			</td>
+			<td>
+				api-ms-win-security-base-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				AdjustTokenPrivileges, FreeSid, GetTokenInformation,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				63
+			</td>
+			<td>
+				3
+			</td>
+			<td>
+				comdlg32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 comdlg32.dll is a module that contains Common dialog boxes used by Windows applications, such as the standard Open File form.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetFileTitleA, GetOpenFileNameA, GetSaveFileNameA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				64
+			</td>
+			<td>
+				3
+			</td>
+			<td>
+				api-ms-win-core-timezone-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				FileTimeToSystemTime, GetTimeZoneInformation, SystemTimeToFileTime,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				65
+			</td>
+			<td>
+				3
+			</td>
+			<td>
+				api-ms-win-security-base-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-security-base-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-security-base-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				AdjustTokenPrivileges, FreeSid, GetTokenInformation,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				66
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				api-ms-win-core-privateprofile-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetPrivateProfileStringA, WritePrivateProfileStringA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				67
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				api-ms-win-core-datetime-l1-1-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetDateFormatA, GetTimeFormatA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				68
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				ms-win-downlevel-version-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				VerQueryValueA, VerQueryValueW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				69
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				api-ms-win-service-management-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CloseServiceHandle, DeleteService,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				70
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				API-MS-Win-core-localization-obsolete-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CompareStringA, GetStringTypeA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				71
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				api-ms-win-core-stringloader-l1-1-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				LoadStringA, LoadStringW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				72
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				api-ms-win-core-processthreads-l1-1-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetThreadContext, OpenProcess,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				73
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				api-ms-win-core-debug-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-debug-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-debug-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				IsDebuggerPresent, OutputDebugStringA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				74
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				api-ms-win-core-debug-l1-1-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				IsDebuggerPresent, OutputDebugStringA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				75
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				api-ms-win-core-datetime-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-datetime-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-datetime-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetDateFormatA, GetTimeFormatA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				76
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				api-ms-win-core-handle-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-handle-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-handle-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CloseHandle, DuplicateHandle,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				77
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				windows.storage.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				SHGetSpecialFolderLocation, SHGetSpecialFolderPathA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				78
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-core-string-l2-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CharNextW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				79
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				ms-win-downlevel-advapi32-l2-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CloseServiceHandle,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				80
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-service-core-l1-1-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				SetServiceStatus,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				81
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-core-io-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-io-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-io-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				DeviceIoControl,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				82
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-core-version-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				VerQueryValueW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				83
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-core-rtlsupport-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-rtlsupport-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-rtlsupport-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				RtlUnwind,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				84
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				urlmon.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 urlmon.dll is a module that contains functions used by Microsoft OLE (Object Linking and Embedding).
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				URLDownloadToFileA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				85
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				API-MS-Win-core-string-l2-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CharNextW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				86
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-core-profile-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-profile-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-profile-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				QueryPerformanceCounter,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				87
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				netapi32.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 netapi32.dll is a module that contains the Windows NET API used by applications to access a Microsoft network.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				Netbios,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				88
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-service-core-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				SetServiceStatus,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				89
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				winspool.drv
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				OpenPrinterA,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				90
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				spoolss.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 spoolss.dll is a library file which contains functions for printer spooling.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				ClosePrinter,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				91
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-core-namedpipe-l1-1-0.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 api-ms-win-core-namedpipe-l1-1-0.dll is an important file of the Microsoft Windows kernel, the core of the operating system. api-ms-win-core-namedpipe-l1-1-0.dll is part of the new kernel architecture Microsoft has introduced for Windows 7, where DLL file names start with api-ms-win-core, followed by the functions category name.
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CreatePipe,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				92
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-core-rtlsupport-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				RtlUnwind,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				93
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-core-file-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				GetTempPathW,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				94
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-core-namedpipe-l1-2-0.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				CreatePipe,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				95
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				api-ms-win-core-io-l1-1-1.dll
+			</td>
+			<td>
+				<strong>
+					API List:
+				</strong>
+				<br />
+				DeviceIoControl,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				96
+			</td>
+			<td>
+				1
+			</td>
+			<td>
+				netbios.dll
+			</td>
+			<td>
+				<strong>
+					Dll Description:
+				</strong>
+				<br />
+				 netbios.dll is a DLL file This process is still being reviewed. If you have some information about it feel free to send us an email at pl[at]uniblue[dot]com
+				<br />
+				<strong>
+					API List:
+				</strong>
+				<br />
+				Netbios,
+			</td>
+		</tr>
+	</tbody>
+</table>
